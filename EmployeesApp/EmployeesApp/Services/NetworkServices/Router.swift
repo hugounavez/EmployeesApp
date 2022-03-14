@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 enum Router {
     case getEmployees
     case getErrorEmployeesEmpty
@@ -37,7 +36,7 @@ enum Router {
         case .getErrorEmployeesEmpty:
             return "/sq-mobile-interview/employees_empty.json"
         case .getErrorEmployeesMalformed:
-            return "/sq-mobile-interview/employees_malformed.json1"
+            return "/sq-mobile-interview/employees_malformed.json"
         }
     }
     

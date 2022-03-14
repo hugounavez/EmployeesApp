@@ -68,9 +68,7 @@ class EmployeeCell: UITableViewCell {
     }
     
     func setupLabelsLayout(){
-        
         self.addSubview(self.labelsStack)
-        
         NSLayoutConstraint.activate([self.labelsStack.leftAnchor.constraint(equalTo: self.mainImage.rightAnchor, constant:  16),
                                      self.labelsStack.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
                                      self.labelsStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5),

@@ -8,7 +8,7 @@
 import XCTest
 @testable import EmployeesApp
 
-class MockNetworkEmployeeService : NetworkEmployeeServiceProtocol {
+class MockRemoteApiEmployeeService : RemoteApiEmployeeServiceProtocol {
     
     var result : Result<ResponseApi, Error>?
     

@@ -9,6 +9,8 @@ The scode was reduced to iPhones and the device orientation as Portrait
 # UI
 The UI was built programmatically with UIKit. 
 
+![Home Screen](images/screen.png)
+
 # Architecture:
 MVVM 
 
@@ -51,14 +53,38 @@ Important classes:
     It is a static class that has some methods with generic parameters that it is being used to request data from servers. 
 
 
-## HomeViewModel 
-MainViewModel
-
-
-
 # Dependency graph:
 
-Here it goes
+![Dependency graph](images/dependencyGraph.png)
+
+Other relevant points:
+## Steps to run the app:
+It doesn't have any cocoa libraries so it is just download and play.
+
+## What areas of the app did you focus on?
+Architecture
+
+## What was the reason for your focus? What problems were you trying to solve?
+The idea was to create an app easy to maintain, testable, efficient.
+I also considered SOLID principles. 
+
+## How long did you spend on this project?
+Around 6 hours
+
+## Did you make any trade-offs for this project? What would you have done differently with more time?
+I could implement something fancier for the indenpency injection, like having a dependency container, a resolver, service locator...
+
+I could have refactored the TableViewCell, I didn't finish its MVVM implementation, it looks a little bit mixed up.
 
 
-# 
+## What do you think is the weakest part of your project?
+I wasn't sure if the project required the images to be stored in a persistant storage or simply in memory. In any case, I could implemented if it is required. 
+
+Normally I use memory cache for simple projects but I can use coredata if is needed or I could use the [Kingfisher](https://github.com/onevcat/Kingfisher) library.
+
+## Did you copy any code or dependencies? Please make sure to attribute them here!
+I used an small helper class to implement reflection in swift for the some unit tests.
+
+## Is there any other information you’d like us to know?
+https://www.linkedin.com/in/hugoreyesamell/
+

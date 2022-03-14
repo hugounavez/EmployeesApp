@@ -10,13 +10,15 @@
 		B721CA4627DC29D000235A3E /* RemoteApiEmployeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B721CA4527DC29D000235A3E /* RemoteApiEmployeeService.swift */; };
 		B721CA4927DC45AD00235A3E /* MockNetworkEmployeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B721CA4827DC45AD00235A3E /* MockNetworkEmployeeService.swift */; };
 		B721CA4C27DC493300235A3E /* ImageCacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B721CA4B27DC493300235A3E /* ImageCacheServiceTests.swift */; };
+		B721CA5927DECF4D00235A3E /* MirrorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B721CA5827DECF4D00235A3E /* MirrorObject.swift */; };
+		B721CA5B27DED04A00235A3E /* MockDownloadImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B721CA5A27DED04A00235A3E /* MockDownloadImageService.swift */; };
+		B721CA5D27DED16400235A3E /* ImageCacheServiceMirror.swift in Sources */ = {isa = PBXBuildFile; fileRef = B721CA5C27DED16400235A3E /* ImageCacheServiceMirror.swift */; };
 		B767202B27D45D2600FA9F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767202A27D45D2600FA9F23 /* AppDelegate.swift */; };
 		B767202D27D45D2600FA9F23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767202C27D45D2600FA9F23 /* SceneDelegate.swift */; };
 		B767202F27D45D2600FA9F23 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767202E27D45D2600FA9F23 /* HomeViewController.swift */; };
 		B767203527D45D2600FA9F23 /* EmployeesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B767203327D45D2600FA9F23 /* EmployeesApp.xcdatamodeld */; };
 		B767203727D45D2700FA9F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B767203627D45D2700FA9F23 /* Assets.xcassets */; };
 		B767203A27D45D2700FA9F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B767203827D45D2700FA9F23 /* LaunchScreen.storyboard */; };
-		B767204527D45D2700FA9F23 /* EmployeesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767204427D45D2700FA9F23 /* EmployeesAppTests.swift */; };
 		B767204F27D45D2700FA9F23 /* EmployeesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767204E27D45D2700FA9F23 /* EmployeesAppUITests.swift */; };
 		B767205127D45D2700FA9F23 /* EmployeesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767205027D45D2700FA9F23 /* EmployeesAppUITestsLaunchTests.swift */; };
 		B767205F27D4610600FA9F23 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767205E27D4610600FA9F23 /* Employee.swift */; };
@@ -53,6 +55,9 @@
 		B721CA4527DC29D000235A3E /* RemoteApiEmployeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteApiEmployeeService.swift; sourceTree = "<group>"; };
 		B721CA4827DC45AD00235A3E /* MockNetworkEmployeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkEmployeeService.swift; sourceTree = "<group>"; };
 		B721CA4B27DC493300235A3E /* ImageCacheServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheServiceTests.swift; sourceTree = "<group>"; };
+		B721CA5827DECF4D00235A3E /* MirrorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorObject.swift; sourceTree = "<group>"; };
+		B721CA5A27DED04A00235A3E /* MockDownloadImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDownloadImageService.swift; sourceTree = "<group>"; };
+		B721CA5C27DED16400235A3E /* ImageCacheServiceMirror.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheServiceMirror.swift; sourceTree = "<group>"; };
 		B767202727D45D2600FA9F23 /* EmployeesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B767202A27D45D2600FA9F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B767202C27D45D2600FA9F23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +67,6 @@
 		B767203927D45D2700FA9F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B767203B27D45D2700FA9F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B767204027D45D2700FA9F23 /* EmployeesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B767204427D45D2700FA9F23 /* EmployeesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesAppTests.swift; sourceTree = "<group>"; };
 		B767204A27D45D2700FA9F23 /* EmployeesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B767204E27D45D2700FA9F23 /* EmployeesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesAppUITests.swift; sourceTree = "<group>"; };
 		B767205027D45D2700FA9F23 /* EmployeesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -108,7 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				B721CA4827DC45AD00235A3E /* MockNetworkEmployeeService.swift */,
-				B721CA4B27DC493300235A3E /* ImageCacheServiceTests.swift */,
+				B721CA5A27DED04A00235A3E /* MockDownloadImageService.swift */,
+				B721CA5C27DED16400235A3E /* ImageCacheServiceMirror.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -127,6 +132,14 @@
 				B767206F27D7EA0500FA9F23 /* AppFactoryContainer.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		B721CA5727DECF3C00235A3E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B721CA5827DECF4D00235A3E /* MirrorObject.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		B767201E27D45D2600FA9F23 = {
@@ -171,8 +184,9 @@
 		B767204327D45D2700FA9F23 /* EmployeesAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				B721CA5727DECF3C00235A3E /* Utilities */,
 				B721CA4727DC459B00235A3E /* Mocks */,
-				B767204427D45D2700FA9F23 /* EmployeesAppTests.swift */,
+				B721CA4B27DC493300235A3E /* ImageCacheServiceTests.swift */,
 				B767207827D8F65900FA9F23 /* MainViewModelTests.swift */,
 			);
 			path = EmployeesAppTests;
@@ -386,8 +400,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B721CA4927DC45AD00235A3E /* MockNetworkEmployeeService.swift in Sources */,
-				B767204527D45D2700FA9F23 /* EmployeesAppTests.swift in Sources */,
+				B721CA5B27DED04A00235A3E /* MockDownloadImageService.swift in Sources */,
+				B721CA5927DECF4D00235A3E /* MirrorObject.swift in Sources */,
 				B721CA4C27DC493300235A3E /* ImageCacheServiceTests.swift in Sources */,
+				B721CA5D27DED16400235A3E /* ImageCacheServiceMirror.swift in Sources */,
 				B767207927D8F65900FA9F23 /* MainViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

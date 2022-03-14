@@ -21,7 +21,7 @@ class ImageCacheService : ImageCacheServiceProtocol{
     
     
     func downloadImageFromUrl(url: String, completion: @escaping (UIImage?) -> ()){
-        // Check if the imate is being
+        // Check if the image is already in the cache
         if let image = cacheImage.object(forKey: url as NSString){
             completion(image)
             return
@@ -35,11 +35,10 @@ class ImageCacheService : ImageCacheServiceProtocol{
                 
                 if (url == currentUrlRequest){
                     // save image in cache
-                    print("from cache")
                     self?.cacheImage.setObject(image, forKey: url as NSString)
                     completion(image)
                 }else{
-                    print("didn't match")
+                    print("image didn't match")
                 }
             case .failure(_):
                 completion(nil)

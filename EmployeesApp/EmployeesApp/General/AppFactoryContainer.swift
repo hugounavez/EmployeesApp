@@ -13,11 +13,9 @@ class AppFactoryContainer {
     
     var remoteApiEmployeeService : RemoteApiEmployeeServiceProtocol = RemoteApiEmployeeService()
     
-    static func makeViewController() -> HomeViewController{
+    static func makeHomeViewController() -> HomeViewController{
         let imageCacheService = ImageCacheService(networkService: DownloadImageService())
         let viewModel = HomeViewModel(AppFactoryContainer.shared.remoteApiEmployeeService, imageCacheService: imageCacheService)
         return HomeViewController(viewModel: viewModel)
     }
-    
-     
 }

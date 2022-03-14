@@ -12,14 +12,11 @@ protocol DownloadImageServiceProtocol
     func downloadImage(urlString: String, completion: @escaping (Result<UIImage, Error>) -> ())
 }
 
-
 class DownloadImageService : DownloadImageServiceProtocol {
     
     func downloadImage(urlString: String, completion: @escaping (Result<UIImage, Error>) -> ()){
         
         let urlSession = URLSession(configuration: .default)
-        
-        
         guard let url = URL(string: urlString) else {
             return
         }
@@ -36,14 +33,15 @@ class DownloadImageService : DownloadImageServiceProtocol {
             }
             
             guard let response = response as? HTTPURLResponse, 200..<300 ~= response.statusCode else {
-                return completion(.failure(NSError()))
+                let error = NSError(domain: "", code: 401, userInfo: [ NSLocalizedDescriptionKey: "Please, check your internet connection or contact the server admin"])
+                return completion(.failure(error as NSError))
             }
             
             if let image = UIImage(data: data){
-                    completion(.success(image))
-                }else{
-                    let error = NSError(domain: "", code: 401, userInfo: [ NSLocalizedDescriptionKey: "Error casting data to image"])
-                    completion(.failure(error))
+                completion(.success(image))
+            }else{
+                let error = NSError(domain: "", code: 401, userInfo: [ NSLocalizedDescriptionKey: "Error casting data to image"])
+                completion(.failure(error))
             }
             
         }.resume()

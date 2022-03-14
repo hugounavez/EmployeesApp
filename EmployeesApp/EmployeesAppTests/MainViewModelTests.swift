@@ -14,15 +14,15 @@ import Combine
 class MainViewModelTests: XCTestCase {
     
     
-    var viewModel: MainViewModel!
-    let mockNetworkEmployeeService = MockNetworkEmployeeService()
+    var viewModel: HomeViewModel!
+    let mockRemoteApiEmployeeService = MockRemoteApiEmployeeService()
     
     var bag : Set<AnyCancellable> = Set<AnyCancellable>()
     
     override func setUpWithError() throws {
         
-        let imageCacheService = ImageCacheService(networkService: NetworkFetcherImageService())
-        self.viewModel = MainViewModel(mockNetworkEmployeeService, imageCacheService: imageCacheService)
+        let imageCacheService = ImageCacheService(networkService: DownloadImageService())
+        self.viewModel = HomeViewModel(mockRemoteApiEmployeeService, imageCacheService: imageCacheService)
         
     }
     
@@ -31,7 +31,7 @@ class MainViewModelTests: XCTestCase {
         let employee = Employee(uuid: "1", fullName: "Bad bunny", phoneNumber: "12345", emailAddress: "messi@gmail.com", biography: "I am an employee", photoUrlSmall: "", photoUrlLarge: "", team: "", employeeType: "")
         let responseApi = ResponseApi(employees: [employee])
 
-        self.mockNetworkEmployeeService.injectClousureForTest(result: .success(responseApi))
+        self.mockRemoteApiEmployeeService.injectClousureForTest(result: .success(responseApi))
         self.viewModel.getEmployees()
         
         self.viewModel.data.sink { result in
@@ -44,7 +44,7 @@ class MainViewModelTests: XCTestCase {
     
     
     func testEmployeeRequestWithErrorResponse(){
-        self.mockNetworkEmployeeService.injectClousureForTest(result: .failure(NSError(domain: "", code: 0, userInfo: ["": ""])))
+        self.mockRemoteApiEmployeeService.injectClousureForTest(result: .failure(NSError(domain: "", code: 0, userInfo: ["": ""])))
         self.viewModel.getEmployees()
         
         var result = false
